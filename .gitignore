@@ -1,0 +1,14 @@
+.docker/
+docker-compose.yml
+
+*.log
+*.tmp
+
+.vscode/
+.idea/
+
+
+*.sql
+*.sqlite
+
+storage/docker/mysql/mysql.sock

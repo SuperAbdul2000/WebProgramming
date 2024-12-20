@@ -1,0 +1,106 @@
+/* Стилизация страницы записи */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Добавляем минимальную высоту для всего контента */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    z-index: 1000;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Смещаем основной контент ниже header */
+main {
+    padding: 100px 20px 20px; /* Добавляем отступ сверху, чтобы не перекрывалось с header */
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    color: #fff; /* Белый цвет текста внутри таблицы */
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    color: #fff; /* Белый цвет текста в ячейках */
+}
+
+.table thead {
+    background-color: #333;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #222;
+}
+
+.message {
+    color: #ffcc00;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.footer-grass {
+    width: 100%;
+    height: auto;
+}
